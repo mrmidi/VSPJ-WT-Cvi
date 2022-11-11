@@ -7,7 +7,7 @@ N.B. All twig templates code are stored in templates folder.
 * Bootrap support was realized from the beginning.
 * assets/styles/global.scss 
 * don't forget to enable Sass support in webpack.config.js and point it to global.scc - .addStyleEntry('global', './assets/styles/global.scss')
-* yarn watch to build/rebuild assets
+* `yarn` watch to build/rebuild assets
 
 ## Menu (navbar)
 * Was realized from the beggining (templates/base.html.twig)

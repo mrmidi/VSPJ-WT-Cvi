@@ -9,18 +9,21 @@ N.B. All twig templates code are stored in templates folder.
 * don't forget to enable Sass support in webpack.config.js and point it to global.scc - .addStyleEntry('global', './assets/styles/global.scss')
 * yarn watch to build/rebuild assets
 
+## Menu (navbar)
+* Was realized from the beggining (templates/base.html.twig)
+
 ## Cv 07
-http://mrmidi.net:8000 
 First route, simple page. Realized thru src/Controllers/HelloworldController.php  
+http://mrmidi.net:8000
 
 ## Cv 08
-GET queries. src/Controllers/GetterController.php 
-
+GET queries. src/Controllers/GetterController.php  
 http://mrmidi.net:8000/getter
 
 ## Cv 09
-Passing an arrays to twig templates. CSS styles (assets/styles/app.css) . 
-Controller: src/Controllers/SendarrayController.php 
+Passing an arrays to twig templates. CSS styles (assets/styles/app.css)  
+Controller: src/Controllers/SendarrayController.php  
+http://mrmidi.net:8000/sendarray
 
 ## Cv 10
 CRUD, Doctrine databases.  

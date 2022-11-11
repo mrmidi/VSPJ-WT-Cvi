@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MygamesController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <p>Back to the <a href="{{ path('app_mygames') }}">games list</a></p>
+    <h1>{{ game.name }}</h1>
+    <h4>Released: {{ game.year }}</h4>
+    <h4>Platform: {{ game.platform }}</h4>
+    <h4>Metacritic Score: {{ game.metascore }}</h4>
+    <p>{{ game.description | raw }}</p>
+</div>
+{% endblock %}

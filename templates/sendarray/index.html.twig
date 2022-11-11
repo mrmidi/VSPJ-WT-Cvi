@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SendarrayController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Cviceni 9</h1>
+
+    <h3>Working with arrays</h3>
+    <p>Okay, lets print 10 colors that I've generated in SendarrayController<p>
+    <ul>
+        {% for color in colors %}
+            <li style="color:{{ color }};">{{ color }} 
+            {% if color == "white" %} <p style="color:black;">it's white :)</p>
+            {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    <p>We don't want to create a lot of routes, didn't we? So lets just output an array of names riiiight here! And don't forget to style them properly ofc.</p>
+    <table width="50%">
+    <tr><th>First Name</th><th>Last Name</th></tr>
+    {% for name in names %}
+      {% if loop.index is even %}
+         {% set mystyle="odd" %}
+      {% else %}
+         {% set mystyle="even" %}
+      {% endif %}
+      <tr class="{{ mystyle }}"><td>{{ name[0] }}</td><td>{{ name[1] }}</td></tr>
+    {% endfor %}
+    </table>
+        <p>Variables dump for your pleasure as usual:<p>
+    {{ dump() }}
+
+</div>
+{% endblock %}

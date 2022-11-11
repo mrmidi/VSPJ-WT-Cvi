@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello GetterController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Cviceni 08</h1>
+    <h3>Working with GET queries</h3>
+
+    {% if name == "" %}
+    <p>Your get query is empty. Want to try something? Click the url: <a href="{{ path("app_getter") }}?name=Aleksandr">{{ path("app_getter") }}?name=Aleksandr</a>
+    {% else %}
+    <p>Hello, {{ name|lower }}!</p>
+    <p>Here is your variables dump:</p>
+    {{ dump() }}
+    {% endif %}
+
+
+</div>
+{% endblock %}

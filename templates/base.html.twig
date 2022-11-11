@@ -7,6 +7,7 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
+            {{ encore_entry_link_tags('global')}}
         {% endblock %}
 
         {% block javascripts %}
@@ -14,6 +15,37 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">WT by mrmidi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+    {% set home = "" %}
+    {% set cv08 = "" %}
+    {% set cv09 = "" %}
+    {% set cv10 = "" %}
+    {% if controller_name == "HelloworldController" %}
+      {% set home = "active" %}
+    {% elseif controller_name == "GetterController" %}
+      {% set cv08 = "active" %}
+    {% elseif controller_name == "SendarrayController" %}
+      {% set cv09 = "active" %}
+     {% elseif controller_name == "MygamesController" %}
+      {% set cv10 = "active" %}     
+    {% endif %}
+      <a class="nav-item nav-link {{ home }}" href="/">CV07</a>
+      <a class="nav-item nav-link {{ cv08 }}" href="{{ path("app_getter") }}">CV08</a>
+      <a class="nav-item nav-link {{ cv09 }}" href="{{ path("app_sendarray") }}">CV09</a>
+      <a class="nav-item nav-link {{ cv10 }}" href="{{ path("app_mygames") }}">CV10</a>
+    </div>
+  </div>
+</nav>
+        
+        {% block body %}
+
+
+        {% endblock %}
     </body>
 </html>

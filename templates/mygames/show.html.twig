@@ -15,5 +15,6 @@
     <h4>Platform: {{ game.platform }}</h4>
     <h4>Metacritic Score: {{ game.metascore }}</h4>
     <p>{{ game.description | raw }}</p>
+    <p><a href="{{ game.id }}/pdf">Download PDF</a></p>
 </div>
 {% endblock %}

@@ -26,6 +26,7 @@
     {% set cv08 = "" %}
     {% set cv09 = "" %}
     {% set cv10 = "" %}
+    {% set cv11 = "" %}
     {% if controller_name == "HelloworldController" %}
       {% set home = "active" %}
     {% elseif controller_name == "GetterController" %}
@@ -34,11 +35,14 @@
       {% set cv09 = "active" %}
      {% elseif controller_name == "MygamesController" %}
       {% set cv10 = "active" %}     
+     {% elseif controller_name == "SecurityexController" %}
+      {% set cv11 = "active" %}           
     {% endif %}
       <a class="nav-item nav-link {{ home }}" href="/">CV07</a>
       <a class="nav-item nav-link {{ cv08 }}" href="{{ path("app_getter") }}">CV08</a>
       <a class="nav-item nav-link {{ cv09 }}" href="{{ path("app_sendarray") }}">CV09</a>
       <a class="nav-item nav-link {{ cv10 }}" href="{{ path("app_mygames") }}">CV10</a>
+      <a class="nav-item nav-link {{ cv11 }}" href="{{ path("app_securityex") }}">CV11</a>
     </div>
   </div>
 </nav>

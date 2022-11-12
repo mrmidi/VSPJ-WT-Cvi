@@ -29,7 +29,7 @@ http://mrmidi.net:8000/sendarray
 ## Ex 10
 CRUD, Doctrine databases.  
 Here i'm using 2 entities: Games and Platforms (one-to-one relationship) to display and modify list of games that I own.  
-** PDF Download realized here ** — it's nice content to make it.  
+**PDF Download realized here** — it's nice content to make it.  
 Controller: src/Controllers/MygamesController.php  
 Entities: src/Entity/Games.php, src/Entity/Platforms.php  
 http://mrmidi.net:8000/mygames (also CRUD admin link on that page)

@@ -1,6 +1,6 @@
 # Webové technologie (Web technologies)
-*** A class tought by PaedDr. František Smrčka, Ph.D.***  
-* Made by Aleksandr Shabelnikov in Symfony 6.1 *  
+A class tought by *** PaedDr. František Smrčka, Ph.D. ***  
+Made by Aleksandr Shabelnikov in Symfony 6.1 
 
 N.B. All twig templates code are stored in templates folder.  
 

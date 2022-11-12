@@ -39,7 +39,7 @@ Security bundle.
 * Registration form
 * Login form
 * Logout
-* Message for only registred users
-Controller: src/Controllers/SecurityexController.php
-Entity: src/Entity/Usewr.php
+* Message for only registred users  
+Controller: src/Controllers/SecurityexController.php  
+Entity: src/Entity/Usewr.php  
 http://mrmidi.net:8000/securityex
